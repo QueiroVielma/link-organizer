@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, MessageCircle, MapPin } from "lucide-react";
+import { ArrowLeft, MessageCircle, MapPin, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function VilaYolandaPage() {
@@ -152,7 +152,7 @@ export default function VilaYolandaPage() {
             </h3>
             <p className="text-gray-400 text-sm">
               Nossa unidade Vila Yolanda oferece todos os serviços de barbearia
-              com profissionais qualificados.
+              com profissionais qualificados e agendamento online.
             </p>
           </motion.div>
         </motion.div>
