@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, MessageCircle, MapPin } from "lucide-react";
+import { ArrowLeft, MessageCircle, MapPin, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function FelipeWandscheerPage() {
