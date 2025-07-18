@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { ArrowLeft, MessageCircle, MapPin } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowLeft, MessageCircle, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function VilaYolandaPage() {
   const containerVariants = {
@@ -22,7 +22,7 @@ export default function VilaYolandaPage() {
       x: -100,
       transition: { duration: 0.3 },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -34,22 +34,38 @@ export default function VilaYolandaPage() {
         ease: "easeOut",
       },
     },
-  }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-gray-950 text-white">
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30"></div>
       <div className="container mx-auto px-4 py-8 max-w-md relative z-10">
-        <motion.div initial="hidden" animate="visible" exit="exit" variants={containerVariants} className="space-y-6">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          variants={containerVariants}
+          className="space-y-6"
+        >
           {/* Header com botão voltar */}
-          <motion.div variants={itemVariants} className="flex items-center gap-4">
-            <Button asChild variant="ghost" size="icon" className="text-gray-100 hover:bg-slate-800/50">
+          <motion.div
+            variants={itemVariants}
+            className="flex items-center gap-4"
+          >
+            <Button
+              asChild
+              variant="ghost"
+              size="icon"
+              className="text-gray-100 hover:bg-slate-800/50"
+            >
               <Link href="/">
                 <ArrowLeft className="w-5 h-5" />
               </Link>
             </Button>
             <div>
-              <h1 className="text-xl font-bold text-gray-100">Unidade Vila Yolanda</h1>
+              <h1 className="text-xl font-bold text-gray-100">
+                Unidade Vila Yolanda
+              </h1>
               <p className="text-gray-400 text-sm">Escolha uma opção</p>
             </div>
           </motion.div>
@@ -106,42 +122,23 @@ export default function VilaYolandaPage() {
                 </a>
               </Button>
             </motion.div>
-
-            {/* Site/Agendamento */}
-            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-              <Button
-                asChild
-                className="w-full h-14 bg-gradient-to-r from-slate-800 to-gray-800 hover:from-slate-700 hover:to-gray-700 text-gray-100 border border-slate-600/30 rounded-xl shadow-lg backdrop-blur-sm"
-              >
-                <a
-                  href="https://online.maapp.com.br/CopettisVilayolanda"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3"
-                >
-                  <Globe className="w-5 h-5" />
-                  <span className="font-medium">Agendar Online</span>
-                </a>
-              </Button>
-            </motion.div>
           </motion.div>
-            
-          </motion.div>
-
-
 
           {/* Informações adicionais */}
           <motion.div
             variants={itemVariants}
             className="bg-slate-900/40 rounded-xl p-4 backdrop-blur-sm border border-slate-700/50"
           >
-            <h3 className="font-semibold mb-2 text-gray-100">Informações da Unidade</h3>
+            <h3 className="font-semibold mb-2 text-gray-100">
+              Informações da Unidade
+            </h3>
             <p className="text-gray-400 text-sm">
-              Nossa unidade Vila Yolanda oferece todos os serviços de barbearia com profissionais qualificados.
+              Nossa unidade Vila Yolanda oferece todos os serviços de barbearia
+              com profissionais qualificados.
             </p>
           </motion.div>
         </motion.div>
       </div>
     </div>
-  )
+  );
 }
