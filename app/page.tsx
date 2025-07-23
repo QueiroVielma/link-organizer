@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { Instagram, MapPin } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Instagram, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   const containerVariants = {
@@ -15,7 +15,7 @@ export default function HomePage() {
         delayChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -27,13 +27,18 @@ export default function HomePage() {
         ease: "easeOut",
       },
     },
-  }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-gray-950 text-white">
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30"></div>
       <div className="container mx-auto px-4 py-8 max-w-md relative z-10">
-        <motion.div initial="hidden" animate="visible" variants={containerVariants} className="space-y-6">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="space-y-6"
+        >
           {/* Logo e Header */}
           <motion.div variants={itemVariants} className="text-center space-y-4">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden shadow-2xl bg-transparent">
@@ -48,8 +53,12 @@ export default function HomePage() {
               />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-100">Copetti's barbershop</h1>
-              <p className="text-gray-400 text-sm mt-2">✂️ Mais que uma barbearia, um lugar de transformação.</p>
+              <h1 className="text-2xl font-bold text-gray-100">
+                Copetti's barbershop
+              </h1>
+              <p className="text-gray-400 text-sm mt-2">
+                ✂️ Mais que uma barbearia, um lugar de transformação.
+              </p>
             </div>
           </motion.div>
 
@@ -73,28 +82,34 @@ export default function HomePage() {
               </Button>
             </motion.div>
 
-            {/* Unidade Vila Yolanda */}
-            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-              <Button
-                asChild
-                className="w-full h-14 bg-gradient-to-r from-slate-800 to-gray-800 hover:from-slate-700 hover:to-gray-700 text-gray-100 border border-slate-600/30 rounded-xl shadow-lg backdrop-blur-sm"
-              >
-                <Link href="/vila-yolanda" className="flex items-center justify-center gap-3">
-                  <MapPin className="w-5 h-5" />
-                  <span className="font-medium">Unidade Vila Yolanda</span>
-                </Link>
-              </Button>
-            </motion.div>
-
             {/* Unidade Felipe Wandscheer */}
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Button
                 asChild
                 className="w-full h-14 bg-gradient-to-r from-gray-800 to-slate-800 hover:from-gray-700 hover:to-slate-700 text-gray-100 border border-slate-600/30 rounded-xl shadow-lg backdrop-blur-sm"
               >
-                <Link href="/felipe-wandscheer" className="flex items-center justify-center gap-3">
+                <Link
+                  href="/felipe-wandscheer"
+                  className="flex items-center justify-center gap-3"
+                >
                   <MapPin className="w-5 h-5" />
                   <span className="font-medium">Unidade Felipe Wandscheer</span>
+                </Link>
+              </Button>
+            </motion.div>
+
+            {/* Unidade Vila Yolanda */}
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <Button
+                asChild
+                className="w-full h-14 bg-gradient-to-r from-slate-800 to-gray-800 hover:from-slate-700 hover:to-gray-700 text-gray-100 border border-slate-600/30 rounded-xl shadow-lg backdrop-blur-sm"
+              >
+                <Link
+                  href="/vila-yolanda"
+                  className="flex items-center justify-center gap-3"
+                >
+                  <MapPin className="w-5 h-5" />
+                  <span className="font-medium">Unidade Vila Yolanda</span>
                 </Link>
               </Button>
             </motion.div>
@@ -102,10 +117,12 @@ export default function HomePage() {
 
           {/* Footer */}
           <motion.div variants={itemVariants} className="text-center pt-8">
-            <p className="text-gray-500 text-xs">© 2025 Copetti's Barbershop - Todos os direitos reservados</p>
+            <p className="text-gray-500 text-xs">
+              © 2025 Copetti's Barbershop - Todos os direitos reservados
+            </p>
           </motion.div>
         </motion.div>
       </div>
     </div>
-  )
+  );
 }
