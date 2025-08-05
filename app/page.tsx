@@ -94,7 +94,7 @@ export default function HomePage() {
                 >
                   <MapPin className="w-5 h-5" />
                   <span className="font-medium">
-                    Unidade 1 Felipe Wandscheer
+                    Unidade 1 - Felipe Wandscheer
                   </span>
                 </Link>
               </Button>
@@ -111,7 +111,7 @@ export default function HomePage() {
                   className="flex items-center justify-center gap-3"
                 >
                   <MapPin className="w-5 h-5" />
-                  <span className="font-medium">Unidade 2 Vila Yolanda</span>
+                  <span className="font-medium">Unidade 2 - Vila Yolanda</span>
                 </Link>
               </Button>
             </motion.div>
