@@ -130,7 +130,7 @@ export default function FelipeWandscheerPage() {
                 className="w-full h-14 bg-gradient-to-r from-slate-800 to-gray-800 hover:from-slate-700 hover:to-gray-700 text-gray-100 border border-slate-600/30 rounded-xl shadow-lg backdrop-blur-sm"
               >
                 <a
-                  href="https://online.maapp.com.br/Copettisagenda?fbclid=PAZXh0bgNhZW0CMTEAAadENM8EcfLlYjE9J99fT1LFTTLfJ7SLRvnMFfptVfET-CGYQ_WFWcWTyAzJ5w_aem_1biYBAX4YPv1Y1zY0rgZSw"
+                  href="https://copettis-barbershop.gestaoblz.com.br/agendamento-rapido?id=8255"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3"
