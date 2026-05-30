@@ -130,7 +130,7 @@ export default function VilaYolandaPage() {
                 className="w-full h-14 bg-gradient-to-r from-slate-800 to-gray-800 hover:from-slate-700 hover:to-gray-700 text-gray-100 border border-slate-600/30 rounded-xl shadow-lg backdrop-blur-sm"
               >
                 <a
-                  href="https://online.maapp.com.br/CopettisVilayolanda"
+                  href="https://copettisunidade2.gestaoblz.com.br/bem-vindo?id=15789"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3"
