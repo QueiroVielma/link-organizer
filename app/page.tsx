@@ -41,11 +41,11 @@ export default function HomePage() {
         >
           {/* Logo e Header */}
           <motion.div variants={itemVariants} className="text-center space-y-4">
-            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden shadow-2xl bg-transparent">
+            <div className="w-40 aspect-[7/2] mx-auto overflow-hidden bg-transparent">
               <img
                 src="/copettis-logo.png"
                 alt="Copetti's Barbershop Logo"
-                className="w-full h-full object-cover scale-110 -m-1"
+                className="w-full h-full object-cover"
                 style={{
                   mixBlendMode: "screen",
                   filter: "contrast(1.1) brightness(1.1)",
