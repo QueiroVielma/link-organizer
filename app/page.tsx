@@ -118,7 +118,7 @@ export default function HomePage() {
           {/* Footer */}
           <motion.div variants={itemVariants} className="text-center pt-8">
             <p className="text-gray-500 text-xs">
-              © 2025 Copetti's Barbershop - Todos os direitos reservados
+              © 2026 Copetti's Barbershop - Todos os direitos reservados
             </p>
           </motion.div>
         </motion.div>
