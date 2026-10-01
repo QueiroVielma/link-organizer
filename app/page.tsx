@@ -53,9 +53,7 @@ export default function HomePage() {
               />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-100">
-                Copetti's barbershop
-              </h1>
+              <h1 className="text-2xl font-bold text-gray-100"></h1>
               <p className="text-gray-400 text-sm mt-2">
                 ✂️ Mais que uma barbearia, um lugar de transformação.
               </p>
